@@ -49,5 +49,7 @@ if( computerMove == 'kamień' && playerMove == 'papier'){
   printMessage('Remis');
 }  else if ( computerMove == 'nożyce' && playerMove == 'papier'){
   printMessage('Przegrywasz :(');
+} else if ( playerMove == 'nieznany ruch' ) {
+ printMessage('Do wyboru tylko cyfra 1, 2 lub 3');
 }
 
