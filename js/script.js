@@ -52,4 +52,3 @@ if( computerMove == 'kamień' && playerMove == 'papier'){
 } else if ( playerMove == 'nieznany ruch' ) {
  printMessage('Do wyboru tylko cyfra 1, 2 lub 3');
 }
-
