@@ -16,7 +16,7 @@ console.log('Wylosowana liczba to: ' + randomNumber);
 
 let computerMove = getMoveName(randomNumber);
 
-console.log('Funkcja getMoveName zwróci:' + computerMove);
+console.log('computerMove zwróci:' + computerMove);
 
 printMessage('Mój ruch to: ' + computerMove);
 
@@ -26,7 +26,7 @@ console.log('Gracz wpisał: ' + playerInput);
 
 let playerMove = getMoveName(playerInput);
 
-console.log('Funkcja getMoveName zwróci:' + playerMove);
+console.log('playerMove zwróci:' + playerMove);
 
 
 printMessage('Twój ruch to: ' + playerMove);
@@ -61,5 +61,5 @@ let gameResult = displayResult(computerMove, playerMove);
 
 console.log('Funkcja displayResult zwróci:' + gameResult);
 
-printMessage(gameResult);
+
 
