@@ -57,9 +57,9 @@ function displayResult(argComputerMove, argPlayerMove){
 
 }
 
-let gameResult = displayResult(computerMove, playerMove);
+displayResult(computerMove, playerMove);
 
-console.log('Funkcja displayResult zwróci:' + gameResult);
+console.log('Funkcja displayResult zwróci:' + displayResult);
 
 
 
