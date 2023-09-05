@@ -54,6 +54,7 @@ function displayResult(argComputerMove, argPlayerMove){
 
 }
 
-displayResult(argComputerMove, argPlayerMove);
+let gameResult = displayResult(computerMove, playerMove);
 
+printMessage(gameResult);
 
