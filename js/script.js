@@ -10,6 +10,25 @@ function getMoveName(argMoveId){
   return 'nieznany ruch';
 }
 
+function displayResult(argComputerMove, argPlayerMove){
+  console.log('moves:', argComputerMove, argPlayerMove);
+  if(
+    (argComputerMove == 'kamień' && argPlayerMove == 'papier') || 
+    (argComputerMove == 'papier' && argPlayerMove == 'nożyce') ||
+    (argComputerMove == 'nożyce' && argPlayerMove == 'kamień')
+  ) {
+  printMessage('Ty wygrywasz!');
+  } else if (argComputerMove == argPlayerMove){
+  printMessage('Remis');
+  } 
+  else if ( argPlayerMove == 'nieznany ruch' ) {
+  printMessage('Do wyboru tylko cyfra 1, 2 lub 3');
+  }
+  else {
+  printMessage('Przegrywasz :(');
+  } 
+}
+
 let randomNumber = Math.floor(Math.random() * 3 + 1);
 
 console.log('Wylosowana liczba to: ' + randomNumber);
@@ -28,38 +47,11 @@ let playerMove = getMoveName(playerInput);
 
 console.log('playerMove zwróci:' + playerMove);
 
-
 printMessage('Twój ruch to: ' + playerMove);
-
-
-function displayResult(argComputerMove, argPlayerMove){
-  if( argComputerMove == 'kamień' && argPlayerMove == 'papier'){
-  printMessage('Ty wygrywasz!');
-} else if ( argComputerMove == 'kamień' && argPlayerMove == 'kamień'){
-  printMessage('Remis');
-} else if ( argComputerMove == 'kamień' && argPlayerMove == 'nożyce'){
-  printMessage('Przegrywasz :(');
-} else if ( argComputerMove == 'papier' && argPlayerMove == 'nożyce'){
-  printMessage('Ty wygrywasz!');
-} else if ( argComputerMove == 'papier' && argPlayerMove == 'papier'){
-  printMessage('Remis');
-} else if ( argComputerMove == 'papier' && argPlayerMove == 'kamień'){
-  printMessage('Przegrywasz :(');
-} else if ( argComputerMove == 'nożyce' && argPlayerMove == 'kamień'){
-  printMessage('Ty wygrywasz!');
-} else if ( argComputerMove == 'nożyce' && argPlayerMove == 'nożyce'){
-  printMessage('Remis');
-} else if ( argComputerMove == 'nożyce' && argPlayerMove == 'papier'){
-  printMessage('Przegrywasz :(');
-} else if ( argPlayerMove == 'nieznany ruch' ) {
- printMessage('Do wyboru tylko cyfra 1, 2 lub 3');
-}
-
-}
 
 displayResult(computerMove, playerMove);
 
-console.log('Funkcja displayResult zwróci:' + displayResult);
+
 
 
 
