@@ -3,16 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Merriweather:ital,wght@1,700&family=Roboto+Slab:wght@800&family=Signika:wght@700&family=Tilt+Warp&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="container">
+		<h1>Papier, kamień, nożyce..</h1>
+		<h2>Witamy w Grze!</h2>
+		<h3>Jak grać?</h3>
+		<ol>
+			<li>Kliknij na jeden z guzików, wybierając swój ruch.</li>
+			<li>Komputer odpowie swoim ruchem.</li>
+			<li>Po rozgrywce zostaną wyświetlone ruchy graczy oraz wynik.</li>
+		</ol>
+		<h2 class="luck">Powodzenia!</h2>
+	</div>
+	<div class="container game">
 		<div id="buttons">
-			<button id="play-rock">Kamień</button>
-			<button id="play-paper">Papier</button>
-			<button id="play-scissors">Nożyce</button>
+			<h3>Twój ruch to?..</h3>
+			<button class="button-rock" id="play-rock" type="button">Kamień</button>
+			<button class="button-paper" id="play-paper" type="button">Papier</button>
+			<button class="button-scissors" id="play-scissors" type="button">Nożyce</button>
 		</div>
-		<div id="messages"></div>
+		<div class="game-msg" id="messages"></div>
 	</div>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>

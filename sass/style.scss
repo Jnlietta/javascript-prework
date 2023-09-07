@@ -1,0 +1,127 @@
+/*Variables*/
+$color-main: #2f3542;
+$color-title:#eccc68;
+$color-header:#a4b0be;
+$color-text:#f1f2f6;
+$color-one:#2ed573;
+$color-two:#3742fa;
+$color-three:#ff4757;
+$hover-one:#7bed9f;
+$hover-two:#70a1ff;
+$hover-three:#ff6b81;
+
+$font-title:'Tilt Warp', cursive;
+$font-text:'Merriweather', serif;
+$font-button:'Signika', sans-serif;
+
+
+
+/*Global*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin:0;
+    padding: 0;
+    background-color:$color-main;
+    color: $color-text;
+    font-family: $font-text;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.container {
+    max-width:1140px;
+    padding: 0 30px;
+    margin:30px auto;
+    //border: 1px solid green;//
+    
+}
+
+h1, h2, h3 {
+    scale: 1.5;
+}
+h1, h2 {
+    color: $color-title;
+    font-family: $font-title;
+}
+h3 {
+    color: $color-header;
+    font-family: $font-button;
+    margin-top: 50px;
+}
+
+ol {
+    //border:1px solid red;//
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    justify-content: center;
+    max-width: 50%;
+    margin: 0 auto;
+    padding-left: 80px;
+}
+li {
+    //border:1px solid white;//
+    align-self: flex-start;
+}
+
+.luck {
+    scale: 1;
+}
+
+//*Game*//
+
+
+.button-rock {
+    background-color: $color-one;
+    border: none;
+    color: $color-text;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    font-family:$font-button;
+}
+.button-rock:hover {
+    background-color: $hover-one; 
+}
+  
+.button-paper {
+    background-color: $color-two;
+    border: none;
+    color: $color-text;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    font-family:$font-button;
+}
+.button-paper:hover {
+    background-color: $hover-two; 
+}
+
+.button-scissors {
+    background-color: $color-three;
+    border: none;
+    color: $color-text;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    font-family:$font-button;
+}
+.button-scissors:hover {
+    background-color: $hover-three; 
+}
+
+.game-msg {
+    padding-top:20px;
+    line-height: 1.7;
+    text-align: center;
+}
