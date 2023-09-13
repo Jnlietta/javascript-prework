@@ -23,6 +23,10 @@
       (argComputerMove == 'nożyce' && argPlayerMove == 'kamień')
     ) {
       printMessage('Ty wygrywasz!');
+      playerScore = playerScore + 1;
+      console.log('gracz wygrał:'+ playerScore);
+      document.getElementById('result').innerHTML = 'Komputer ' + computerScore + ':' + playerScore + ' Gracz';
+
     } else if (argComputerMove == argPlayerMove){
       printMessage('Remis');
     } 
@@ -31,6 +35,9 @@
     }
     else {
       printMessage('Przegrywasz :(');
+      computerScore = computerScore + 1;
+      console.log('komputer wygrał:'+computerScore);
+      document.getElementById('result').innerHTML = 'Komputer ' + computerScore + ':' + playerScore + ' Gracz';
     } 
   }
 
@@ -51,6 +58,7 @@
   printMessage('Twój ruch to: ' + playerMove);
 
   displayResult(computerMove, playerMove);
+
 }
 
 document.getElementById('play-rock').addEventListener('click', function(){
@@ -64,4 +72,16 @@ document.getElementById('play-paper').addEventListener('click', function(){
 document.getElementById('play-scissors').addEventListener('click', function(){
   playGame(3);
 });
+
+let computerScore = 0;
+let playerScore = 0;
+
+document.getElementById('result').innerHTML = 'Komputer ' + computerScore + ':' + playerScore + ' Gracz';
+
+//let resultScore = document.getElementById('result');
+//console.log=(resultScore.innerHTML);
+
+//resultScore.innerHTML = printMessage('Komputer ' + computerScore +':' + playerScore + ' Gracz');
+
+
 }

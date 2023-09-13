@@ -36,7 +36,7 @@ body {
     max-width:1140px;
     padding: 0 30px;
     margin:30px auto;
-    //border: 1px solid green;//
+    //border: 1px solid green;
     
 }
 
@@ -121,7 +121,17 @@ li {
 }
 
 .game-msg {
-    padding-top:20px;
+    padding-top:10px;
     line-height: 1.7;
     text-align: center;
+}
+
+.game-result {
+    margin: 20px auto;
+    padding: 10px;
+    background-color: black;
+    background-size: 50%;
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
 }
